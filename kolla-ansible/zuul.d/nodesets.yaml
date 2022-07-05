@@ -1,0 +1,118 @@
+---
+- nodeset:
+    name: kolla-ansible-centos8s
+    nodes:
+      - name: primary
+        label: centos-8-stream
+
+- nodeset:
+    name: kolla-ansible-debian-bullseye
+    nodes:
+      - name: primary
+        label: debian-bullseye
+
+- nodeset:
+    name: kolla-ansible-debian-bullseye-aarch64
+    nodes:
+      - name: primary
+        label: debian-bullseye-arm64
+
+- nodeset:
+    name: kolla-ansible-focal
+    nodes:
+      - name: primary
+        label: ubuntu-focal
+
+- nodeset:
+    name: kolla-ansible-debian-bullseye-multi
+    nodes:
+      - name: primary
+        label: debian-bullseye
+      - name: secondary1
+        label: debian-bullseye
+      - name: secondary2
+        label: debian-bullseye
+
+- nodeset:
+    name: kolla-ansible-openeuler-20.03-lts-sp2
+    nodes:
+      - name: primary
+        label: openEuler-20-03-LTS-SP2
+
+- nodeset:
+    name: kolla-ansible-rocky-8
+    nodes:
+      - name: primary
+        label: rockylinux-8
+
+- nodeset:
+    name: kolla-ansible-focal-multi
+    nodes:
+      - name: primary
+        label: ubuntu-focal
+      - name: secondary1
+        label: ubuntu-focal
+      - name: secondary2
+        label: ubuntu-focal
+
+- nodeset:
+    name: kolla-ansible-centos8s-multi
+    nodes:
+      - name: primary
+        label: centos-8-stream
+      - name: secondary1
+        label: centos-8-stream
+      - name: secondary2
+        label: centos-8-stream
+
+- nodeset:
+    name: kolla-ansible-focal-nested-virt
+    nodes:
+      - name: primary
+        label: nested-virt-ubuntu-focal
+
+- nodeset:
+    name: kolla-ansible-centos8s-nested-virt
+    nodes:
+      - name: primary
+        label: nested-virt-centos-8-stream
+
+- nodeset:
+    name: kolla-ansible-centos8s-multi-monasca
+    nodes:
+      - name: primary
+        label: centos-8-stream
+      - name: secondary1
+        label: centos-8-stream
+      - name: secondary2
+        label: centos-8-stream
+      - name: secondary3
+        label: centos-8-stream
+      - name: secondary4
+        label: centos-8-stream
+      - name: secondary5
+        label: centos-8-stream
+
+- nodeset:
+    name: kolla-ansible-focal-masakari
+    nodes:
+      - name: primary
+        label: ubuntu-focal
+      - name: secondary
+        label: ubuntu-focal
+      - name: ternary1
+        label: ubuntu-focal
+      - name: ternary2
+        label: ubuntu-focal
+
+- nodeset:
+    name: kolla-ansible-centos8s-masakari
+    nodes:
+      - name: primary
+        label: centos-8-stream
+      - name: secondary
+        label: centos-8-stream
+      - name: ternary1
+        label: centos-8-stream
+      - name: ternary2
+        label: centos-8-stream
