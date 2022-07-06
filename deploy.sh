@@ -1,7 +1,7 @@
 # Installing Dependencies
 #sudo apt update
-sudo apt install python3-dev libffi-dev gcc libssl-dev
-sudo apt install python3-pip
+yes | sudo apt install python3-dev libffi-dev gcc libssl-dev
+yes | sudo apt install python3-pip
 sudo pip3 install -U pip
 sudo pip install -U 'ansible>=4,<6'
 
