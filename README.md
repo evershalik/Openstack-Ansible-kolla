@@ -9,11 +9,13 @@
 ## For official kolla-ansible repository 
 [Click here for official repo](https://opendev.org/openstack/kolla-ansible)
 
-
 ## Openstack Login
+
+To see the interface to openstack login type the IP address you have provided in `/etc/kolla/globals.yml` into your browser and after pressing enter you will get an interface like this.
+![](https://lh5.googleusercontent.com/5r8opmTttDe0favnCVaf-EfsV2GFu9Ecp7FEDmF9Y2EHy0E_0PyIjEGXWGm45tJerfTHmnLwOJiOOdI6ltVaAPvRe-MCudNJbqXocKStxakuaFbLn6itW-0Deo09YypGQLJgk1k0srrf6ZSN-A)
+
 By default the username for login is : `admin`
 For password, `cat /etc/kolla/passwords.yml` and then search for `keystone_admin_password`.
-
 
 ## Host Network Bridge Information:
 
