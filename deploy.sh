@@ -33,7 +33,7 @@ kolla-genpwd
 
 
 # Kolla globals.yml
-tee /etc/ansible/globals.yml << EOF
+tee /etc/kolla/globals.yml << EOF
 kolla_base_distro: "ubuntu"
 network_interface: "eth0"
 neutron_external_interface: "eth1"
