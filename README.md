@@ -9,6 +9,12 @@
 ## For official kolla-ansible repository 
 [Click here for official repo](https://opendev.org/openstack/kolla-ansible)
 
+
+## Openstack Login
+By default the username for login is : `admin`
+For password, `cat /etc/kolla/passwords.yml` and then search for `keystone_admin_password`.
+
+
 ## Host Network Bridge Information:
 
 OpenStack-Ansible uses bridges to connect physical and logical network interfaces on the host to virtual network interfaces within containers. Target hosts need to be configured with the following network bridges:
