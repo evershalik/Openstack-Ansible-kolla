@@ -9,6 +9,14 @@
 ## For official kolla-ansible repository 
 [Click here for official repo](https://opendev.org/openstack/kolla-ansible)
 
+## Host machine requirements
+The host machine must satisfy the following minimum requirements:
+
+- 2 network interfaces
+- 8GB main memory
+- 40GB disk space
+
+
 ## Openstack Login
 
 To see the interface to openstack login type the IP address you have provided in `/etc/kolla/globals.yml` into your browser and after pressing enter you will get an interface like this.
