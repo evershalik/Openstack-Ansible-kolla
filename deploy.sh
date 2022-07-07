@@ -1,5 +1,5 @@
 # Installing Dependencies
-#sudo apt update
+sudo apt update
 yes | sudo apt install python3-dev libffi-dev gcc libssl-dev
 yes | sudo apt install python3-pip
 sudo pip3 install -U pip
