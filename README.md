@@ -15,7 +15,7 @@ To see the interface to openstack login type the IP address you have provided in
 ![](https://lh5.googleusercontent.com/5r8opmTttDe0favnCVaf-EfsV2GFu9Ecp7FEDmF9Y2EHy0E_0PyIjEGXWGm45tJerfTHmnLwOJiOOdI6ltVaAPvRe-MCudNJbqXocKStxakuaFbLn6itW-0Deo09YypGQLJgk1k0srrf6ZSN-A)
 
 By default the username for login is : `admin`
-For password, `cat /etc/kolla/passwords.yml` and then search for `keystone_admin_password`.
+For password, `cat /etc/kolla/passwords.yml | grep keystone_admin_password` and it will give you password to login.
 
 ## Host Network Bridge Information:
 
