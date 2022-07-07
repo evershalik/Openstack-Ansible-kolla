@@ -64,3 +64,7 @@ kolla-ansible post-deploy
 . /etc/kolla/admin-openrc.sh
 /usr/local/share/kolla-ansible/init-runonce
 
+# Displaying login password
+cat /etc/kolla/passwords.yml | grep keystone_admin_password
+
+
