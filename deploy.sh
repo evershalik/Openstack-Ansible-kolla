@@ -34,10 +34,14 @@ kolla-genpwd
 
 # configuring Kolla globals.yml
 
+# In this we are storing the ip of eth0 for further use.
+my_br_ip=$(ifconfig eth0 | egrep -o 'inet [0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'  | cut -d' ' -f2)
+
+
 # kolla_base_distro: "ubuntu"
 # network_interface: "eth0"
 # neutron_external_interface: "eth1"
-# kolla_internal_vip_address: "192.168.5.190"
+# kolla_internal_vip_address: "$my_br_ip"
 # enable_cinder: "no"
 # enable_haproxy: "no"
 
@@ -47,7 +51,7 @@ workaround_ansible_issue_8743: yes
 kolla_base_distro: "ubuntu"
 network_interface: "eth0"
 neutron_external_interface: "eth1"
-kolla_internal_vip_address: "192.168.5.190"
+kolla_internal_vip_address: "$my_br_ip"
 enable_cinder: "no"
 enable_haproxy: "no"
 EOF
