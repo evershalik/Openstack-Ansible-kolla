@@ -33,7 +33,7 @@ kolla-genpwd
 
 
 # configuring Kolla globals.yml
-
+sudo apt install net-tools
 # In this we are storing the ip of eth0 for further use.
 my_br_ip=$(ifconfig eth0 | egrep -o 'inet [0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'  | cut -d' ' -f2)
 
