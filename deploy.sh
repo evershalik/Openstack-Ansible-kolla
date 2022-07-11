@@ -70,7 +70,7 @@ kolla-ansible post-deploy
 
 # changing virt_type in nova-com 
 sed -i 's/virt_type = kvm/virt_type = qemu/' /etc/kolla/nova-compute/nova.conf
-
+sudo docker restart nova_compute
 
 # Displaying message
 echo 🙂 Successfully Deployed
