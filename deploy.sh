@@ -68,12 +68,17 @@ kolla-ansible post-deploy
 . /etc/kolla/admin-openrc.sh
 /usr/local/share/kolla-ansible/init-runonce
 
-#changing virt_type in nova-com 
+# changing virt_type in nova-com 
 sed -i 's/virt_type = kvm/virt_type = qemu/' /etc/kolla/nova-compute/nova.conf
 
 
-#Displaying message
+# Displaying message
 echo 🙂 Successfully Deployed
+
+#creating a VM
+source /etc/kolla/admin-openrc.sh
+
+
 
 # Displaying login password
 cat /etc/kolla/passwords.yml | grep keystone_admin_password
