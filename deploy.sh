@@ -68,6 +68,10 @@ kolla-ansible post-deploy
 . /etc/kolla/admin-openrc.sh
 /usr/local/share/kolla-ansible/init-runonce
 
+#changing virt_type in nova-com 
+sed -i 's/virt_type = kvm/virt_type = qemu/' /etc/kolla/nova-compute/nova.conf
+
+
 #Displaying message
 echo 🙂 Successfully Deployed
 
