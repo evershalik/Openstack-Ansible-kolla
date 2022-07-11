@@ -16,6 +16,10 @@ The host machine must satisfy the following minimum requirements:
 - 8GB main memory
 - 40GB disk space
 
+## After deploying the above script file check if all docker containers are in running state
+Type `sudo docker ps -a` to check the state of docker containers.
+![image](https://user-images.githubusercontent.com/98207888/178249237-684668ca-2bf5-458d-a721-17657c25b91b.png)
+
 
 ## Openstack Login
 
@@ -24,6 +28,8 @@ To see the interface to openstack login type the IP address you have provided in
 
 By default the username for login is : `admin`
 For password, `cat /etc/kolla/passwords.yml | grep keystone_admin_password` and it will give you password to login.
+
+
 
 ## Host Network Bridge Information:
 
