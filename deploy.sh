@@ -66,6 +66,7 @@ kolla-ansible -i ./all-in-one deploy
 pip install python-openstackclient -c https://releases.openstack.org/constraints/upper/master --ignore-installed
 kolla-ansible post-deploy
 . /etc/kolla/admin-openrc.sh
+pip3 install python-openstackclient
 /usr/local/share/kolla-ansible/init-runonce
 
 # changing virt_type in nova-com 
